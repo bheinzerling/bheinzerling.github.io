@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Benjamin Heinzerling</title>
+    <link>https://bheinzerling.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Benjamin Heinzerling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://bheinzerling.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2019-sequence/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2019-sequence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BPEmb: Tokenization-free Pre-trained Subword Embeddings in 275 Languages</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2018-bpemb/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2018-bpemb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What&#39;s important in a text? An extensive evaluation of linguistic annotations for summarization</title>
+      <link>https://bheinzerling.github.io/publication/zopf-2018-important/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/zopf-2018-important/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revisiting Selectional Preferences for Coreference Resolution</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2017-selectional/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2017-selectional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trust, but Verify! Better Entity Linking through Automatic Verification</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2017-trust/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2017-trust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Error Analysis for Entity Linking</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2015-visual/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2015-visual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HITS at TAC KBP 2015: Entity discovery and linking, and event nugget detection</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2015-tac/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2015-tac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HITS&#39; Monolingual and Cross-lingual Entity Linking System at TAC 2014</title>
+      <link>https://bheinzerling.github.io/publication/judea-2014-tac/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/judea-2014-tac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HITS&#39; Monolingual and Cross-lingual Entity Linking System at TAC 2013</title>
+      <link>https://bheinzerling.github.io/publication/fahrni-2013-tac/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/fahrni-2013-tac/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nafise Sadat Moosavi on Benjamin Heinzerling</title>
+    <link>https://bheinzerling.github.io/authors/nafise-sadat-moosavi/</link>
+    <description>Recent content in Nafise Sadat Moosavi on Benjamin Heinzerling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://bheinzerling.github.io/authors/nafise-sadat-moosavi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Revisiting Selectional Preferences for Coreference Resolution</title>
+      <link>https://bheinzerling.github.io/publication/heinzerling-2017-selectional/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/heinzerling-2017-selectional/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

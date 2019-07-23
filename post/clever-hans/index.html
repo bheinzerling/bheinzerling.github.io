@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Benjamin Heinzerling">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A review of Timothy Niven and Hung-Yu Kao, 2019: Probing Neural Network Comprehension of Natural Language Arguments.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://bheinzerling.github.io/post/clever-hans/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.35387d828cf63a93f82a2d63a578781f.css">
+
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://bheinzerling.github.io/post/clever-hans/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@benbenhh">
+  <meta property="twitter:creator" content="@benbenhh">
+  
+  <meta property="og:site_name" content="Benjamin Heinzerling">
+  <meta property="og:url" content="https://bheinzerling.github.io/post/clever-hans/">
+  <meta property="og:title" content="NLP&#39;s Clever Hans Moment has Arrived | Benjamin Heinzerling">
+  <meta property="og:description" content="A review of Timothy Niven and Hung-Yu Kao, 2019: Probing Neural Network Comprehension of Natural Language Arguments."><meta property="og:image" content="https://bheinzerling.github.io/post/clever-hans/featured.jpg">
+  <meta property="twitter:image" content="https://bheinzerling.github.io/post/clever-hans/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-07-21T23:39:19&#43;09:00">
+  
+  <meta property="article:modified_time" content="2019-07-21T23:39:19&#43;09:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>NLP&#39;s Clever Hans Moment has Arrived | Benjamin Heinzerling</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Benjamin Heinzerling</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1 itemprop="name">NLP&#39;s Clever Hans Moment has Arrived</h1>
+
+  
+  <p class="page-subtitle">A review of Timothy Niven and Hung-Yu Kao, 2019: Probing Neural Network Comprehension of Natural Language Arguments</p>
+  
+
+  
+
+
+
+<meta content="2019-07-21 23:39:19 &#43;0900 JST" itemprop="datePublished">
+<meta content="2019-07-21 23:39:19 &#43;0900 JST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2019-07-21</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://bheinzerling.github.io/post/clever-hans/&amp;text=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://bheinzerling.github.io/post/clever-hans/&amp;t=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived&amp;body=https://bheinzerling.github.io/post/clever-hans/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://bheinzerling.github.io/post/clever-hans/&amp;title=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived%20https://bheinzerling.github.io/post/clever-hans/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://bheinzerling.github.io/post/clever-hans/&amp;title=NLP&amp;#39;s%20Clever%20Hans%20Moment%20has%20Arrived" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 483px;">
+  <div style="position: relative">
+    <img src="/post/clever-hans/featured_hu425f7e7bd3b57a6652337186d315b2ff_98559_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">NLP researchers evaluating a neural network.</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p><strong>tl;dr:</strong> While the problem has been known for some time already, Niven &amp; Kao present quite an egregious case of a neural network not learning what we think it learns.</p>
+
+<p>The paper will appear at ACL 2019, <a href="https://arxiv.org/abs/1907.07355" target="_blank">preprint available here</a>.</p>
+
+<hr />
+
+<p>It is now almost a cliché to find out that BERT (<a href="https://www.aclweb.org/anthology/papers/N/N19/N19-1423/" target="_blank">Devlin et al., 2019</a>) performs &ldquo;surprisingly well&rdquo; on whatever dataset you throw at it.
+In this paper, Niven &amp; Kao throw an argument comprehension dataset and, as expected, were surprised to find that with random choice giving 50 percent accuracy, a knowledge-rich model getting 61 percent, and the previously best model achieving 71 percent by pre-training on a larger dataset for a related task, finetuned BERT wins hands down, getting 77 percent right.</p>
+
+<p>So far, so BERT, but here comes the twist: Instead of submitting yet another &ldquo;we haz SOTA, accept plox&rdquo; type paper, the authors were suspicious of this seemingly great success. Argument comprehension is a rather difficult task that requires world knowledge and commonsense reasoning (see Figure 1), and while no one doubts that BERT is one of the best language models created yet, there is little evidence that language models are capable of such feats of high-level natural language understanding.</p>
+
+
+
+
+
+
+
+<figure>
+
+<img src="arct.png" >
+
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>The Argument Reasoning Comprehension Task (<a href="https://www.aclweb.org/anthology/papers/S/S18/S18-1121/" target="_blank">Habernal et al., 2017</a>, image source: <a href="https://arxiv.org/abs/1907.07355" target="_blank">Niven &amp; Kao, 2019</a>). Assuming a claim is made based on a given reason, select the piece of world knowledge (warrant or the alternative) that makes the claim valid. Here, the argument <em>Google is not a harmful monopoly because people can choose not to use Google</em> is valid &ndash; or <em>warranted</em> in <a href="https://en.wikipedia.org/wiki/Toulmin_method" target="_blank">Toulmin&rsquo;s terms</a> &ndash; if <em>other search engines don&rsquo;t redirect to Google</em>, but invalid if <em>all other search engines redirect to Google</em>, because in the latter case users are forced to use Google, making Google a harmful monopoly. Sidenote: I think this example chosen by the authors is a bit unfortunate since it hinges on the strange use of <em>redirect to</em> meaning something like <em>use search results provided by</em>.</h4>
+  
+</figcaption>
+
+</figure>
+
+
+<p>The authors perform three analyses. First, they count unigrams and bigrams in the possible answers (i.e. warrants) and observe that the presence of a single unigram like <em>not</em>, <em>is</em>, or <em>do</em> predicts the correct warrant better than random chance, indicating that such cues are useful and probably exploited by the model.
+Then, to check if the model indeed exploits such cues, the authors provide the model only with partial input, which makes reasoning about the correct answer impossible: For example, it should not be possible to reason about whether <em>other search engines don&rsquo;t redirect to Google</em> or <em>all other search engines redirect to Google</em> is the correct warrant if no claim or reason is given.
+However, the model doesn&rsquo;t care about this impossibility and identifies the correct warrant with 71 percent accuracy. After running similar experiments for the other two task-breaking settings (claim and warrant only; reason and warrant only), the authors conclude that dataset contains statistical cues and that BERT&rsquo;s performance on this task can be entirely explained by its ability to exploit these cues.
+To drive the point home, in their third experiment the authors construct a version of the dataset in which the cues are not informative anymore and find that performance drops to random chance level.
+Without getting into a <a href="https://plato.stanford.edu/entries/chinese-room/" target="_blank">Chinese Room</a> argument about what it means to <em>understand</em> something, most people would probably agree that a model making predictions based on the presence or absence of a handful of words like &ldquo;not&rdquo;, &ldquo;is&rdquo;, or &ldquo;do&rdquo; does not understand anything about argumentation. The authors declare that their SOTA result is meaningless.</p>
+
+<blockquote>
+<p>Our main finding is that these results are not meaningful and should be discarded.</p>
+</blockquote>
+
+<p>Of course, the problem of learners solving a task by learning the &ldquo;wrong&rdquo; thing has been known for a long time and is known as the <a href="https://en.wikipedia.org/wiki/Clever_Hans" target="_blank">Clever Hans effect</a>,  after the eponymous horse which appeared to be able to perform simple intellectual tasks, but in reality relied on involuntary cues given by its handler. Since the 1960s, versions of the <a href="https://www.gwern.net/Tanks" target="_blank">tank anecdote</a> tell of a neural network trained by the military to recognize tanks in images, but actually learning to recognize different levels of brightness due to one type of  tank appearing only in bright photos and another type only in darker ones.
+Less anecdotal, Viktoria Krakovna has collected a <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml" target="_blank">depressingly long list</a> of agents following the <a href="https://en.wikipedia.org/wiki/Letter_and_spirit_of_the_law" target="_blank">letter, but not the spirit</a> of their reward function, with such gems as a video game agent <a href="https://www.youtube.com/watch?list=PLjs9WCnnR7PCn_Kzs2-1afCsnsBENWqor&amp;time_continue=50&amp;v=cckZ6oAoLjo" target="_blank">learning to die at the end of the first level</a>, since repeating that easy level gives a higher score than dying early in the harder second level. Two more recent, but already infamous cases are an image classifer claimed to be able to distinguish faces of criminals from those of law-abiding citizens, but actually <a href="https://callingbullshit.org/case_studies/case_study_criminal_machine_learning.html" target="_blank">recognizing smiles</a> and a supposed &ldquo;sexual orientation detector&rdquo; which can be <a href="https://medium.com/@blaisea/do-algorithms-reveal-sexual-orientation-or-just-expose-our-stereotypes-d998fafdf477" target="_blank">better explained as a detector of glasses, beards and eyeshadow</a>.</p>
+
+<p>If NLP is <a href="http://ruder.io/nlp-imagenet/" target="_blank">following in the footsteps of computer vision</a>, it seems to be doomed to repeat its failures, too. Coming back to the paper, the authors point to a (again, depressingly) large amount of recent work reporting Clever Hans effects in NLP datasets.
+Especially notable among related work is McCoy, Pavlick &amp; Linzen&rsquo;s <a href="https://arxiv.org/abs/1902.01007" target="_blank"><em>Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference</em></a>, which finds an instance of the Clever Hans effect in NLI, and comes to the same conclusions:</p>
+
+<blockquote>
+<p>Statistical learners such as standard neural network architectures are prone to adopting shallow heuristics that succeed for the majority of training examples, instead of learning the underlying generalizations that they are intended to capture.</p>
+</blockquote>
+
+<p>For a broader view on this topic, also see Ana Marasović&rsquo;s article on <a href="https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing/" target="_blank">NLP&rsquo;s Generalization Problem</a>.
+To be clear, no one is claiming that large models like BERT or deep learning in general are useless (and I&rsquo;ve found quite the opposite in my own work), but failures like the ones demonstrated in the paper and related work should make us sceptical about reports of near-human performance in high-level natural language understanding tasks.</p>
+
+<p>Two minor gripes I have about the paper concern terminology. The authors call their second analysis &ldquo;probing experiments&rdquo;, but <em>probing</em> usually refers to training shallow classifiers on top of a deep neural network in order to determine what kind of information its representations contain, which is not done here. Similarly, the authors call the dataset they construct in their third analysis &ldquo;adversarial dataset&rdquo;, but <em>adversarial</em> usually refers to instances that mislead a model into making a wrong decision, which, again, is not done here. But these wording issues do not diminish the main findings of the paper.</p>
+
+<p>In summary, Niven &amp; Kao present a textbook case of the Clever Hans effect in NLP and remind us that as we train increasingly stronger learners, we need to pay increased attention to their ability of exploiting cues and taking unintended shortcuts.</p>
+
+<h2 id="what-does-the-clever-hans-effect-mean-for-nlp">What does the Clever Hans effect mean for NLP?</h2>
+
+<p>The growing number of papers finding cases of the Clever Hans effect raises important questions for NLP research, the most obvious one being how the effect can be prevented.
+When patterns in the dataset are aligned with the goal of the task at hand, a strong learner being able to recognize, remember, and generalize these patterns is desirable. But if the patterns are not what we&rsquo;re actually interested in, then they become cues and shortcuts that allow the model to perform well without understanding the task.
+To prevent the Clever Hans effect, we hence need to aim for datasets without spurious patterns, and we need to assume that a well-performing model didn&rsquo;t learn anything useful until proven otherwise. I&rsquo;ll make suggestions for improving datasets first, then one for improving models.</p>
+
+<h3 id="datasets-need-more-love">Datasets need more love</h3>
+
+<p>Coming up with a model and improving it gives instant gratification from seeing the score go up during development, and SOTA on a common dataset all but ensures paper acceptance and ensuing citations.
+The gratification for creating a dataset is much more delayed and much less certain. Anecdotally, the default *ACL conference reviewer stance towards a paper proposing a novel<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> model getting SOTA<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> seems to be &ldquo;accept&rdquo;, while a paper introducing a new dataset needs to fight against a &ldquo;this paper only introduces a new dataset -&gt; reject&rdquo; attitude: People who create datasets are not doing real science, and while they&rsquo;re free to have their own little conference in exotic locations, they obviously are not smart enough to <em>import tensorflow as tf</em>, so they shouldn&rsquo;t pollute top tier conferences with their boring resource papers. <a href="https://rbawden.wordpress.com/2019/07/19/one-paper-nine-reviews/" target="_blank">This post by Rachel Bawden</a> gives examples of this kind of reviewer attitude.</p>
+
+<p>Of course, not all resource papers can be published at top conferences with low acceptance rates, but if we have to choose between having too many models or too many datasets, I&rsquo;d argue more datasets will have a more solid and lasting positive impact. Better acceptance prospects will encourage more researchers to create datasets, which will give us more and (hopefully) better datasets, which, in turn, will allow overcoming the current dataset monoculture with one &ldquo;standard&rdquo; dataset per task, and the resulting dataset diversity will, finally, allow more robust evaluation of models.</p>
+
+<h3 id="dataset-ablations-and-public-betas">Dataset ablations and public betas</h3>
+
+<p>Ablating, i.e. removing, part of a model and observing the impact this has on performance is a common method for verifying that the part in question is useful. If performance doesn&rsquo;t go down, then the part is useless and should be removed. Carrying this method over to datasets, it should become common practice to perform <em>dataset ablations</em>, as well, for example:</p>
+
+<ul>
+<li>Provide only incomplete input (as done in the reviewed paper): This verifies that the complete input is required. If not, the dataset contains cues that allow taking shortcuts.</li>
+<li>Shuffle the input: This verifies the importance of word (or sentence) order. If a bag-of-words/sentences gives similar results, even though the task requires sequential reasoning, then the model has not learned sequential reasoning and the dataset contains cues that allow the model to &ldquo;solve&rdquo; the task without it.</li>
+<li>Assign random labels: How much does performance drop if 10 percent of instances are relabeled randomly? How much with all random labels? If scores don&rsquo;t change much, the model probably didn&rsquo;t learning anything interesting about the task.</li>
+<li>Randomly replace content words: How much does performance drop if all noun phrases and/or verb phrases are replaced with random noun phrases and verbs? If not much, the dataset may provide unintended non-content cues, such as sentence length or distribution of function words.</li>
+</ul>
+
+<p>New datasets could be improved and verified by initially treating them as being in a public beta phase, in which claims are made only in terms of performance on dataset X and not in terms of performance in task Y. Model creators using a dataset in public beta would also have to perform dataset ablations until we can be reasonably sure that the dataset contains no simple cues or shortcuts.</p>
+
+<h3 id="inter-prediction-agreement">Inter-prediction agreement</h3>
+
+<p>If, for example, adding an unrelated sentence to the input causes a question-answering model to give a different answer (see Figure 2), the model is not really understanding the question. Rather, it seems to have learned heuristics like <em>if the question contains the words &ldquo;what&rdquo; and &ldquo;name&rdquo; the answer is the first proper noun phrase in the last sentence</em>.</p>
+
+
+
+
+
+
+
+<figure>
+
+<img src="qa_fail.png" >
+
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>A question-answering model being fooled by a meaning-preserving addition of an unrelated sentence, shown in blue (Source: <a href="https://aclweb.org/anthology/papers/D/D17/D17-1215/" target="_blank">Jia and Liang, 2017</a>).</h4>
+  
+</figcaption>
+
+</figure>
+
+
+<p>Failures like these mean that we should not only aim to create better models that co-evolve with increasingly difficult datasets, as proposed by <a href="https://arxiv.org/abs/1905.07830" target="_blank">Zellers et al. (2019)</a>, but also improve models by making them more robust.
+Towards this goals, model creators need to adopt a <a href="https://bibinlp.umiacs.umd.edu/" target="_blank">Build It, Break It</a> mentality, according to which it is not enough to get a high score on a certain dataset, but also necessary to test a model&rsquo;s robustness. Such tests could be done by something akin to <a href="https://www.owasp.org/index.php/Fuzzing" target="_blank">fuzzing</a> in software testing, where an attacker attempts to find inputs that cause a system to fail.</p>
+
+<p>If dataset creators have to report inter-annotator agreement to allow judging the consistency of annotations, we should require model creators to report inter-prediction agreement to allow judging the consistency of model predictions. Such a score could be calculated on sets of semantically equivalent instances, e.g. as the proportion of predictions that remain the same under meaning-preserving perturbations of a test instance.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">The importance of being <em>novel</em> cannot be overstated. A paper proposing a model that is merely <em>new</em> has little chance of being accepted.
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:2">Also see Anna Rogers&rsquo; <a href="https://hackingsemantics.xyz/2019/leaderboards/" target="_blank">critique of the SOTA-centric approach to NLP</a>.
+ <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu6c0d739f96c2f75d5bd7395aae27af21_31515_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://bheinzerling.github.io/">Benjamin Heinzerling</a></h5>
+      <h6 class="card-subtitle">Postdoctoral Researcher, RIKEN AIP / Tohoku University</h6>
+      <p class="card-text" itemprop="description">I&rsquo;m a postdoctoral researcher in Natural Language Processing. My research interests include analysis of entities mentioned in text, linking texts and knowledge bases, and multilingual subword methods.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:benjamion.heinzerling@riken.jp" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/benbenhh" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=w8pxkWsAAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/bheinzerling" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9881d84a7dbd704179a08d7d1d079225.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

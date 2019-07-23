@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benjamin Heinzerling</title>
+    <link>https://bheinzerling.github.io/authors/admin/</link>
+    <description>Recent content on Benjamin Heinzerling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    
+	    <atom:link href="https://bheinzerling.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://bheinzerling.github.io/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;Benjamin Heinzerling is a postdoctoral research at RIKEN AIP and Tohoku University. His research interests include analysis of entities mention in text, linking texts and knowledge bases, and multilingual subword methods.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
