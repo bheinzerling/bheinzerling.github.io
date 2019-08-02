@@ -6,10 +6,19 @@
     <description>Recent content in Michael Strube on Benjamin Heinzerling</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://bheinzerling.github.io/authors/michael-strube/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fine-Grained Entity Typing in Hyperbolic Space</title>
+      <link>https://bheinzerling.github.io/publication/lopez-2019-finegrained/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/lopez-2019-finegrained/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation</title>
