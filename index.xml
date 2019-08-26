@@ -155,6 +155,19 @@ Towards this goal, model creators need to adopt a &lt;a href=&#34;https://bibinl
     </item>
     
     <item>
+      <title>Should We Pay Attention to Attention?</title>
+      <link>https://bheinzerling.github.io/post/attention/</link>
+      <pubDate>Sun, 21 Jul 2019 23:39:19 +0900</pubDate>
+      
+      <guid>https://bheinzerling.github.io/post/attention/</guid>
+      <description>&lt;p&gt;Comment by Chris Dyer at ACL 2019 (Serrano&amp;rsquo;s talk): Attention not trained to be interpretable, why should it be?
+Comment by Ray Mooney at ACL 2019 (same talk): How about supervised atttention? (find paper)&lt;/p&gt;
+
+&lt;p&gt;Belinkov TACL paper&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation</title>
       <link>https://bheinzerling.github.io/publication/heinzerling-2019-sequence/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
