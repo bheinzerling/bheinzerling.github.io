@@ -6,10 +6,19 @@
     <description>Recent content on Benjamin Heinzerling</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 01:18:55 +0000</lastBuildDate>
     
 	    <atom:link href="https://bheinzerling.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On the Importance of Subword Information for Morphological Tasks in Truly Low-Resource Languages</title>
+      <link>https://bheinzerling.github.io/publication/zhu-2019-subword/</link>
+      <pubDate>Thu, 29 Aug 2019 01:18:55 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/zhu-2019-subword/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Fine-Grained Entity Typing in Hyperbolic Space</title>
