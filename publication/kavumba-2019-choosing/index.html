@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Recent work has validated the importance of subword information for word representation learning. Since subwords increase parameter sharing ability in neural models, their value should be even more pronounced in low-data regimes. In this work, we therefore provide a comprehensive analysis focused on the usefulness of subwords for word representation learning in truly low-resource scenarios and for three representative morphological tasks: fine-grained entity typing, morphological tagging, and named entity recognition. We conduct a systematic study that spans several dimensions of comparison: 1) type of data scarcity which can stem from the lack of task-specific training data, or even from the lack of unannotated data required to train word embeddings, or both; 2) language type by working with a sample of 16 typologically diverse languages including some truly low-resource ones (e.g. Rusyn, Buryat, and Zulu); 3) the choice of the subword-informed word representation method. Our main results show that subword-informed models are universally useful across all language types, with large gains over subword-agnostic embeddings. They also suggest that the effective use of subwords largely depends on the language (type) and the task at hand, as well as on the amount of available data for training the embeddings and task-based models, where having sufficient in-task data is a more critical requirement.">
+  <meta name="description" content="Pretrained language models, such as BERT and RoBERTa, have shown large improvements in the commonsense reasoning benchmark COPA. However, recent work found that many improvements in benchmarks of natural language understanding are not due to models learning the task, but due to their increasing ability to exploit superficial cues, such as tokens that occur more often in the correct answer than the wrong one. Are BERT′s and RoBERTa′s good performance on COPA also caused by this? We find superficial cues in COPA, as well as evidence that BERT exploits these cues.To remedy this problem, we introduce Balanced COPA, an extension of COPA that does not suffer from easy-to-exploit single token cues. We analyze BERT′s and RoBERTa′s performance on original and Balanced COPA, finding that BERT relies on superficial cues when they are present, but still achieves comparable performance once they are made ineffective, suggesting that BERT learns the task to a certain degree when forced to. In contrast, RoBERTa does not appear to rely on superficial cues.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://bheinzerling.github.io/publication/zhu-2019-subword/">
+  <link rel="alternate" hreflang="en-us" href="https://bheinzerling.github.io/publication/kavumba-2019-choosing/">
 
   
 
@@ -96,7 +96,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://bheinzerling.github.io/publication/zhu-2019-subword/">
+  <link rel="canonical" href="https://bheinzerling.github.io/publication/kavumba-2019-choosing/">
 
   
   
@@ -111,12 +111,12 @@
   <meta property="twitter:creator" content="@benbenhh">
   
   <meta property="og:site_name" content="Benjamin Heinzerling">
-  <meta property="og:url" content="https://bheinzerling.github.io/publication/zhu-2019-subword/">
-  <meta property="og:title" content="On the Importance of Subword Information for Morphological Tasks in Truly Low-Resource Languages | Benjamin Heinzerling">
-  <meta property="og:description" content="Recent work has validated the importance of subword information for word representation learning. Since subwords increase parameter sharing ability in neural models, their value should be even more pronounced in low-data regimes. In this work, we therefore provide a comprehensive analysis focused on the usefulness of subwords for word representation learning in truly low-resource scenarios and for three representative morphological tasks: fine-grained entity typing, morphological tagging, and named entity recognition. We conduct a systematic study that spans several dimensions of comparison: 1) type of data scarcity which can stem from the lack of task-specific training data, or even from the lack of unannotated data required to train word embeddings, or both; 2) language type by working with a sample of 16 typologically diverse languages including some truly low-resource ones (e.g. Rusyn, Buryat, and Zulu); 3) the choice of the subword-informed word representation method. Our main results show that subword-informed models are universally useful across all language types, with large gains over subword-agnostic embeddings. They also suggest that the effective use of subwords largely depends on the language (type) and the task at hand, as well as on the amount of available data for training the embeddings and task-based models, where having sufficient in-task data is a more critical requirement."><meta property="og:image" content="https://bheinzerling.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://bheinzerling.github.io/publication/kavumba-2019-choosing/">
+  <meta property="og:title" content="When Choosing Plausible Alternatives, Clever Hans can be Clever | Benjamin Heinzerling">
+  <meta property="og:description" content="Pretrained language models, such as BERT and RoBERTa, have shown large improvements in the commonsense reasoning benchmark COPA. However, recent work found that many improvements in benchmarks of natural language understanding are not due to models learning the task, but due to their increasing ability to exploit superficial cues, such as tokens that occur more often in the correct answer than the wrong one. Are BERT′s and RoBERTa′s good performance on COPA also caused by this? We find superficial cues in COPA, as well as evidence that BERT exploits these cues.To remedy this problem, we introduce Balanced COPA, an extension of COPA that does not suffer from easy-to-exploit single token cues. We analyze BERT′s and RoBERTa′s performance on original and Balanced COPA, finding that BERT relies on superficial cues when they are present, but still achieves comparable performance once they are made ineffective, suggesting that BERT learns the task to a certain degree when forced to. In contrast, RoBERTa does not appear to rely on superficial cues."><meta property="og:image" content="https://bheinzerling.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://bheinzerling.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-11-08T07:36:28&#43;00:00">
+  <meta property="article:published_time" content="2019-11-08T07:36:15&#43;00:00">
   
   <meta property="article:modified_time" content="2019-11-01T00:00:00&#43;00:00">
   
@@ -130,7 +130,7 @@
 
 
 
-  <title>On the Importance of Subword Information for Morphological Tasks in Truly Low-Resource Languages | Benjamin Heinzerling</title>
+  <title>When Choosing Plausible Alternatives, Clever Hans can be Clever | Benjamin Heinzerling</title>
 
 </head>
 
@@ -318,7 +318,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">On the Importance of Subword Information for Morphological Tasks in Truly Low-Resource Languages</h1>
+  <h1 itemprop="name">When Choosing Plausible Alternatives, Clever Hans can be Clever</h1>
 
   
 
@@ -341,7 +341,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yi-zhu/">Yi Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/benjamin-heinzerling/">Benjamin Heinzerling</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/ivan-vulic/">Ivan Vulić</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/michael-strube/">Michael Strube</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/roi-reichart/">Roi Reichart</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/anna-korhonen/">Anna Korhonen</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/pride-kavumba/">Pride Kavumba</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/naoya-inoue/">Naoya Inoue</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/benjamin-heinzerling/">Benjamin Heinzerling</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/keshav-singh/">Keshav Singh</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/paul-reisert/">Paul Reisert</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/kentaro-inui/">Kentaro Inui</a></span>
 
   </div>
   
@@ -380,7 +380,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://bheinzerling.github.io/publication/zhu-2019-subword/&amp;text=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://bheinzerling.github.io/publication/kavumba-2019-choosing/&amp;text=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -393,7 +393,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://bheinzerling.github.io/publication/zhu-2019-subword/&amp;t=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://bheinzerling.github.io/publication/kavumba-2019-choosing/&amp;t=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -406,7 +406,7 @@
       
       
       <li>
-        <a href="mailto:?subject=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages&amp;body=https://bheinzerling.github.io/publication/zhu-2019-subword/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever&amp;body=https://bheinzerling.github.io/publication/kavumba-2019-choosing/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -419,7 +419,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://bheinzerling.github.io/publication/zhu-2019-subword/&amp;title=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://bheinzerling.github.io/publication/kavumba-2019-choosing/&amp;title=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -432,7 +432,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages%20https://bheinzerling.github.io/publication/zhu-2019-subword/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever%20https://bheinzerling.github.io/publication/kavumba-2019-choosing/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -445,7 +445,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://bheinzerling.github.io/publication/zhu-2019-subword/&amp;title=On%20the%20Importance%20of%20Subword%20Information%20for%20Morphological%20Tasks%20in%20Truly%20Low-Resource%20Languages" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://bheinzerling.github.io/publication/kavumba-2019-choosing/&amp;title=When%20Choosing%20Plausible%20Alternatives,%20Clever%20Hans%20can%20be%20Clever" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -491,16 +491,18 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.aclweb.org/anthology/K19-1021" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.aclweb.org/anthology/D19-6004" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/zhu-2019-subword/cite.bib">
+        data-filename="/publication/kavumba-2019-choosing/cite.bib">
   Cite
 </button>
+
+
 
 
 
@@ -512,17 +514,15 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/zhu-2019-subword/zhu2019subword_poster.pdf" target="_blank" rel="noopener">
-  Poster
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/kavumba-2019-choosing/kavumba2019choosing.pdf" target="_blank" rel="noopener">
+  Slides
 </a>
 
 
 
 
 
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.18653/v1/K19-1021" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.18653/v1/D19-6004" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -540,7 +540,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Recent work has validated the importance of subword information for word representation learning. Since subwords increase parameter sharing ability in neural models, their value should be even more pronounced in low-data regimes. In this work, we therefore provide a comprehensive analysis focused on the usefulness of subwords for word representation learning in truly low-resource scenarios and for three representative morphological tasks: fine-grained entity typing, morphological tagging, and named entity recognition. We conduct a systematic study that spans several dimensions of comparison: 1) type of data scarcity which can stem from the lack of task-specific training data, or even from the lack of unannotated data required to train word embeddings, or both; 2) language type by working with a sample of 16 typologically diverse languages including some truly low-resource ones (e.g. Rusyn, Buryat, and Zulu); 3) the choice of the subword-informed word representation method. Our main results show that subword-informed models are universally useful across all language types, with large gains over subword-agnostic embeddings. They also suggest that the effective use of subwords largely depends on the language (type) and the task at hand, as well as on the amount of available data for training the embeddings and task-based models, where having sufficient in-task data is a more critical requirement.</p>
+    <p class="pub-abstract" itemprop="text">Pretrained language models, such as BERT and RoBERTa, have shown large improvements in the commonsense reasoning benchmark COPA. However, recent work found that many improvements in benchmarks of natural language understanding are not due to models learning the task, but due to their increasing ability to exploit superficial cues, such as tokens that occur more often in the correct answer than the wrong one. Are BERT′s and RoBERTa′s good performance on COPA also caused by this? We find superficial cues in COPA, as well as evidence that BERT exploits these cues.To remedy this problem, we introduce Balanced COPA, an extension of COPA that does not suffer from easy-to-exploit single token cues. We analyze BERT′s and RoBERTa′s performance on original and Balanced COPA, finding that BERT relies on superficial cues when they are present, but still achieves comparable performance once they are made ineffective, suggesting that BERT learns the task to a certain degree when forced to. In contrast, RoBERTa does not appear to rely on superficial cues.</p>
     
 
     
@@ -570,7 +570,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)</em></div>
+          <div class="col-12 col-md-9"><em>Proceedings of the First Workshop on Commonsense Inference in Natural Language Processing</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -612,7 +612,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="/authors/yi-zhu/"></a></h5>
+      <h5 class="card-title" itemprop="name"><a href="/authors/pride-kavumba/"></a></h5>
       
       
       <ul class="network-icon" aria-hidden="true">
