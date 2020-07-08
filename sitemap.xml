@@ -1,65 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://bheinzerling.github.io/publication_types/1/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/anna-korhonen/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/benjamin-heinzerling/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/ivan-vulic/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/kentaro-inui/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/keshav-singh/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/michael-strube/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/naoya-inoue/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -70,19 +60,16 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/paul-reisert/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/pride-kavumba/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/publication_types/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -93,7 +80,6 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/roi-reichart/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -104,13 +90,11 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/yi-zhu/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/federico-lopez/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -141,61 +125,51 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/ana-marasovic/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/anette-frank/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/beniamin-heinzerling/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/eneldo-loza-mencia/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/johannes-furnkranz/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/markus-zopf/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/pvs-avinesh/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/teresa-botschen/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/tobias-falke/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/todor-mihaylov/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -206,13 +180,11 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/chin-yew-lin/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bheinzerling.github.io/authors/nafise-sadat-moosavi/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -233,7 +205,6 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/alex-judea/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -249,7 +220,6 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/angela-fahrni/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -260,7 +230,6 @@
   <url>
     <loc>https://bheinzerling.github.io/authors/thierry-gockel/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -269,7 +238,6 @@
   
   <url>
     <loc>https://bheinzerling.github.io/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -278,7 +246,6 @@
   
   <url>
     <loc>https://bheinzerling.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
