@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kazuma Kokuta on Benjamin Heinzerling</title>
+    <link>https://bheinzerling.github.io/authors/kazuma-kokuta/</link>
+    <description>Recent content in Kazuma Kokuta on Benjamin Heinzerling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://bheinzerling.github.io/authors/kazuma-kokuta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Can LMs Store and Retrieve 1-to-N Relational Knowledge?</title>
+      <link>https://bheinzerling.github.io/publication/nagasawa-2023-lms/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/nagasawa-2023-lms/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

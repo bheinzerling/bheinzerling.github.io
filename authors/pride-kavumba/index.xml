@@ -6,10 +6,28 @@
     <description>Recent content in Pride Kavumba on Benjamin Heinzerling</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://bheinzerling.github.io/authors/pride-kavumba/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prompting for explanations improves Adversarial NLI. Is this true? Yes it is true because it weakens superficial cues</title>
+      <link>https://bheinzerling.github.io/publication/kavumba-2023-prompting/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/kavumba-2023-prompting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COPA-SSE: Semi-structured Explanations for Commonsense Reasoning</title>
+      <link>https://bheinzerling.github.io/publication/brassard-2022-copa/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/brassard-2022-copa/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Learning to Learn to be Right for the Right Reasons</title>

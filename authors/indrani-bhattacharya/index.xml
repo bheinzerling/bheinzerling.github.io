@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indrani Bhattacharya on Benjamin Heinzerling</title>
+    <link>https://bheinzerling.github.io/authors/indrani-bhattacharya/</link>
+    <description>Recent content in Indrani Bhattacharya on Benjamin Heinzerling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://bheinzerling.github.io/authors/indrani-bhattacharya/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</title>
+      <link>https://bheinzerling.github.io/publication/workshop-2023-bloom-176-bparameteropenaccessmultilingual/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bheinzerling.github.io/publication/workshop-2023-bloom-176-bparameteropenaccessmultilingual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
