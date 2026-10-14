@@ -1,0 +1,93 @@
+/* Plain academic homepage: system fonts, one column, no visual effects. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  background: white;
+  color: #222;
+  font: 16px/1.55 Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4 { line-height: 1.3; }
+h1 { font-size: 30px; margin: 0 0 18px; }
+h2 { font-size: 23px; margin: 0 0 16px; }
+h3 { font-size: 18px; margin: 20px 0 12px; }
+h4 { font-size: 16px; margin: 0; }
+p { margin: 0 0 14px; }
+a { color: #0645ad; text-underline-offset: 2px; }
+a:visited { color: #4d338a; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #0645ad; outline-offset: 3px; }
+img { max-width: 100%; height: auto; }
+.muted { color: #555; }
+.site-header { margin-bottom: 32px; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 15px; }
+.skip-link { position: absolute; left: -10000px; }
+.skip-link:focus { position: static; display: block; margin-bottom: 16px; }
+.profile { display: flow-root; margin-bottom: 28px; }
+.profile-contact { float: right; width: 170px; margin: 0 0 18px 28px; }
+.portrait { display: block; width: 170px; height: auto; }
+.profile-links { list-style: none; padding: 0; margin: 12px 0 0; font-size: 14px; }
+.profile-links li { margin-bottom: 4px; }
+.resource-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 5px 16px; }
+.content-section { margin-top: 32px; }
+.content-section h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+.archive-link { margin-top: 10px; font-size: 14px; }
+.publication-year-group { margin-bottom: 25px; }
+.publication-item { margin-bottom: 20px; }
+.publication-item h4 { font-weight: 600; }
+.publication-item p { margin: 3px 0; font-size: 15px; }
+.authors { color: #333; }
+.venue { color: #555; }
+.resource-links { margin: 5px 0 0; font-size: 14px; gap: 4px 14px; }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list > li { display: flex; gap: 16px; margin-bottom: 15px; }
+.news-list time { flex: 0 0 80px; color: #555; font-size: 14px; padding-top: 2px; }
+.news-list p { margin: 0; }
+.record-list { list-style: none; margin: 0; padding: 0; }
+.record-list > li { margin-bottom: 20px; }
+.record-list h3, .record-list h4 { font-size: 16px; margin: 0 0 4px; }
+.record-list p { margin: 4px 0; }
+.grant-list, .service-list, .interests, .education { padding-left: 22px; }
+.grant-list li, .service-list li, .interests li, .education li { margin-bottom: 6px; }
+.site-footer { display: flex; flex-wrap: wrap; gap: 5px 20px; margin-top: 40px; padding-top: 14px; border-top: 1px solid #ddd; font-size: 13px; color: #555; }
+.back-link { display: inline-block; margin-bottom: 22px; }
+.page-intro h1, .detail-page h1 { font-size: 28px; }
+.page-intro { margin-bottom: 24px; }
+.detail-page > .resource-links { margin: 14px 0 22px; }
+.detail-authors { margin-top: 14px; }
+.detail-venue { color: #555; }
+.all-authors { margin: 14px 0; }
+.all-authors summary { cursor: pointer; }
+.all-authors p { margin-top: 12px; }
+.paper-figure { margin: 24px 0; }
+.paper-figure img { display: block; }
+.prose { margin-top: 24px; }
+.prose h2 { margin-top: 30px; }
+.prose h3 { margin-top: 24px; }
+.prose figure { margin: 24px 0; }
+.prose figure img { display: block; margin: 0 auto; }
+.prose figcaption, .prose figcaption h4 { font-size: 14px; font-weight: normal; color: #555; margin-top: 10px; line-height: 1.5; }
+.prose blockquote { margin: 20px 0 20px 20px; padding-left: 15px; border-left: 2px solid #ddd; }
+.prose li { margin-bottom: 8px; }
+.prose a { overflow-wrap: anywhere; }
+.prose hr { border: 0; border-top: 1px solid #ddd; margin: 24px 0; }
+.prose .footnotes { font-size: 14px; }
+@media (max-width: 600px) {
+  body { padding: 20px 16px; }
+  .site-header { margin-bottom: 24px; }
+  .site-header nav { gap: 5px 14px; font-size: 14px; }
+  h1 { font-size: 27px; }
+  .profile-contact { float: none; width: auto; margin: 0 0 20px; display: flex; align-items: flex-start; gap: 20px; }
+  .portrait { width: 110px; flex: 0 0 110px; }
+  .profile-links { margin: 0; }
+  .news-list > li { gap: 12px; }
+  .news-list time { flex-basis: 72px; font-size: 13px; }
+}
+@media print {
+  body { max-width: none; padding: 0; font-size: 11pt; }
+  .site-header, .site-footer, .skip-link { display: none; }
+  a, a:visited { color: black; }
+  .publication-item { break-inside: avoid; }
+}

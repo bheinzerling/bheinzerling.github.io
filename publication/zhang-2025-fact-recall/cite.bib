@@ -1,0 +1,13 @@
+
+@misc{zhang_understanding_2025,
+	title = {Understanding {Fact} {Recall} in {Language} {Models}: {Why} {Two}-{Stage} {Training} {Encourages} {Memorization} but {Mixed} {Training} {Teaches} {Knowledge}},
+	shorttitle = {Understanding {Fact} {Recall} in {Language} {Models}},
+	url = {https://arxiv.org/abs/2505.16178v2},
+	abstract = {While fine-tuning is the standard for injecting factual knowledge into large language models (LLMs), the mechanisms enabling reliable fact recall via unseen queries remain poorly understood. Common two-stage training strategies, which sequentially train on fact storage and query formats, often cause rote memorization. In contrast, mixed training jointly optimizes both formats and exhibits superior generalized recall. We investigate this success by comparing the two paradigms across 2.8\${\textbackslash}sim\$4B LLMs and identify the core mechanism: the joint optimization objective in mixed training induces gradient consistency across storage and query formats. This in turn drives the representation consistency between the two formats, establishing a format-invariant retrieval process that maps unseen queries to stored facts. In contrast, the lack of such an objective in two-stage training results in inconsistent representations and failed recall. The consistency further localizes to the parameters updated by both formats, a set that is substantially larger under mixed training than under two-stage training. At the input level, the consistency leaves an interpretable signature: mixed training encodes facts in storage format from subject-relation tokens, the same components available in queries, while two-stage training relies on the full context. Our findings characterize the mechanisms of fact recall and offer mechanistic foundation for optimizing knowledge injection in LLMs.},
+	language = {en},
+	urldate = {2026-10-14},
+	journal = {arXiv.org},
+	author = {Zhang, Ying and Heinzerling, Benjamin and Li, Dongyuan and Inui, Kentaro},
+	month = may,
+	year = {2025},
+}

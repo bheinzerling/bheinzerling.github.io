@@ -1,0 +1,12 @@
+
+@misc{takahashi_topk_2025,
+	title = {{TopK} {Language} {Models}},
+	url = {https://arxiv.org/abs/2506.21468v1},
+	abstract = {Sparse autoencoders (SAEs) have become an important tool for analyzing and interpreting the activation space of transformer-based language models (LMs). However, SAEs suffer several shortcomings that diminish their utility and internal validity. Since SAEs are trained post-hoc, it is unclear if the failure to discover a particular concept is a failure on the SAE's side or due to the underlying LM not representing this concept. This problem is exacerbated by training conditions and architecture choices affecting which features an SAE learns. When tracing how LMs learn concepts during training, the lack of feature stability also makes it difficult to compare SAEs features across different checkpoints. To address these limitations, we introduce a modification to the transformer architecture that incorporates a TopK activation function at chosen layers, making the model's hidden states equivalent to the latent features of a TopK SAE. This approach eliminates the need for post-hoc training while providing interpretability comparable to SAEs. The resulting TopK LMs offer a favorable trade-off between model size, computational efficiency, and interpretability. Despite this simple architectural change, TopK LMs maintain their original capabilities while providing robust interpretability benefits. Our experiments demonstrate that the sparse representations learned by TopK LMs enable successful steering through targeted neuron interventions and facilitate detailed analysis of neuron formation processes across checkpoints and layers. These features make TopK LMs stable and reliable tools for understanding how language models learn and represent concepts, which we believe will significantly advance future research on model interpretability and controllability.},
+	language = {en},
+	urldate = {2026-10-14},
+	journal = {arXiv.org},
+	author = {Takahashi, Ryosuke and Inaba, Tatsuro and Inui, Kentaro and Heinzerling, Benjamin},
+	month = jun,
+	year = {2025},
+}
